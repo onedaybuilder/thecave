@@ -1,5 +1,5 @@
 "use client"
-import { Center, useGLTF } from '@react-three/drei';
+import { Bounds, Center, useGLTF } from '@react-three/drei';
 import { Canvas } from '@react-three/fiber';
 import { OrbitControls } from '@react-three/drei';
 
@@ -10,13 +10,15 @@ const Watch = () => {
           className='w-full h-full'
        >
            
-        <OrbitControls makeDefault />
+        <OrbitControls makeDefault enableZoom={false}/>
 
         <directionalLight castShadow position={ [ 1, 2, 3 ] } intensity={ 1.5 } shadow-normalBias = {0.04} />
         <ambientLight intensity={ 0.5 } />
-            <Center>
-                <primitive object={watch.scene}/>
-            </Center>
+            <Bounds fit clip observe margin={1.2}>
+                
+                    <primitive object={watch.scene}/>
+                
+            </Bounds>
        </Canvas>
      );
 }
