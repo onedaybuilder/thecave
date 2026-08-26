@@ -7,9 +7,9 @@ const MobileMenu = () => {
 
     return ( 
         <>
-            <div className="py-8 px-[2rem] md:hidden flex gap-2 text-white" onClick={() => {setIsOpen(!isOpen)}}>
-                <button id="mobile-menu-button" className="mobile-menu-button">☰</button>
-                <span className="text-white justify-self-center"><a href="">Cart(0)</a></span>
+            <div className="py-8 px-[2rem] md:hidden flex items-center justify-center gap-2 text-white" onClick={() => {setIsOpen(!isOpen)}}>
+                <span className="text-white"><a href="">Cart(0)</a></span>
+                <button id="mobile-menu-button" className="mobile-menu-button text-3xl">☰</button>
             </div>
 
              <nav id="mobile-menu" className={`${isOpen ? "py-8 flex flex-col absolute top-8" : "hidden"}`}>

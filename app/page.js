@@ -4,6 +4,11 @@ import Watch from "./components/Watch";
 import HomeHero from "./components/HomeHero";
 import Stats from "./components/stats";
 import About from "./components/about";
+import Collection from "./components/collection";
+import Marquee from "./components/marquee";
+import BuildYourWatch from "./components/buildyourwatch";
+import ContactForm from "./components/ContactForm";
+import Footer from "./components/Footer";
 
 export default async function Home() {
   
@@ -13,6 +18,10 @@ export default async function Home() {
       <HomeHero/>
       <Stats/>
       <About/>
+      <Collection/>
+      <Marquee/>
+      <BuildYourWatch/>
+      <Footer/>
     </div>
   );
 }

@@ -16,7 +16,13 @@
   --color-rose-gold: #b8795e;
   --color-yellow-gold: #d8b04a;
   --font-cormorant: var(--font-cormorant);
-  --font-montserrat: var(--font-montserrat)
+  --font-montserrat: var(--font-montserrat);
+  --animate-marquee: marquee 30s linear infinite;
+
+  @keyframes marquee {
+    0% { transform: translateX(0%); }
+    100% { transform: translateX(-50%); }
+  }
 }
 
 @media (prefers-color-scheme: dark) {

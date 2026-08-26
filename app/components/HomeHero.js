@@ -28,7 +28,7 @@ const HomeHero = () => {
                 </div>
 
                  <div className="flex flex-col gap-4 md:items-start">
-                    <button className="bg-[#14185C] text-white pt-1 pb-1 pl-4 pr-4 rounded-full">Shop</button>
+                    <button className="bg-[#14185C] text-white py-2 px-4">Shop</button>
                     <button className="underline text-white">Build your watch</button>
                 </div>
 
