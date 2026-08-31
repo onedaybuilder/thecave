@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Collection = () => {
     return ( 
-        <div className="py-[4rem]  px-[2rem] md:px-[10rem] bg-[#fafbfa]">
+        <div className="py-[4rem] text-[#1e1e1e]  px-[2rem] md:px-[10rem] bg-[#fafbfa]">
             <h2 className="font-cormorant">Shop our collection</h2>
             <div className="grid md:grid-cols-3 gap-16 py-[4rem]">
                 <div className="flex flex-col gap-4">
